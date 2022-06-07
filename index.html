@@ -14,14 +14,21 @@
             <pre style="overflow: scroll;">
 <b>&lt;!DOCTYPE html&gt;</b> &lt;!--le indica al navegador la version de html que se esta usando--&gt;
 <b>&lt;html lang=&quot;en&quot;&gt;</b>&lt;!--es la etiqueta raiz, todo nuestro codi html debe ir dentro de esta etiqueta--&gt;
-    <b>&lt;head&gt;</b>&lt;!--es la etiqueta contenedora para todo lo que usa el navegador, no es visible para el usuario--&gt;
-        <b>&lt;meta charset=&quot;UTF-8&quot;&gt;</b>&lt;!--habilita caracteres especiales (tildes, asentos,etc)--&gt;
-        <b>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</b>&lt;!--adacta el documento para representarlo en el navegador IE--&gt;
-        <b>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</b>&lt;!--trata el documento para que el contenido sea &quot;responsivo&quot;, en diferentes pantallas--&gt;
-        <b>&lt;title&gt;Document&lt;/title&gt;</b>&lt;!--titulo de nuestra pagina, entre 55 / 65 caracteres--&gt;
-        <b>&lt;meta name=&quot;description&quot; content=&quot;esta pagina es una vista del curso de HTML de @jonmircha&quot;&gt;</b>&lt;!--descripcion de nuestra pagina que aparecera en los navegadores, no mas de 156 caracteres--&gt;
+    <b>&lt;head&gt;</b>
+    &lt;!--es la etiqueta contenedora para todo lo que usa el navegador, no es visible para el usuario--&gt;
+        <b>&lt;meta charset=&quot;UTF-8&quot;&gt;</b>
+        &lt;!--habilita caracteres especiales (tildes, asentos,etc)--&gt;
+        <b>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</b>
+        &lt;!--adacta el documento para representarlo en el navegador IE--&gt;
+        <b>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</b>
+        &lt;!--trata el documento para que el contenido sea &quot;responsivo&quot;, en diferentes pantallas--&gt;
+        <b>&lt;title&gt;Document&lt;/title&gt;</b>
+        &lt;!--titulo de nuestra pagina, entre 55 / 65 caracteres--&gt;
+        <b>&lt;meta name=&quot;description&quot; content=&quot;esta pagina es una vista del curso de HTML de @jonmircha&quot;&gt;</b>
+        &lt;!--descripcion de nuestra pagina que aparecera en los navegadores, no mas de 156 caracteres--&gt;
     <b>&lt;/head&gt;</b>
-    <b>&lt;body&gt;</b>&lt;!--todo lo visual para el usuario va dentro de la etiqueta body--&gt;
+    <b>&lt;body&gt;</b>&lt;
+    !--todo lo visual para el usuario va dentro de la etiqueta body--&gt;
 
     <b>&lt;/body&gt;</b>
 <b>&lt;/html&gt;</b>
@@ -83,10 +90,6 @@
                     <li>
                         small - <small>texto pequeño</small>
                     </li>
-                    <li>pre - <pre>todo lo que este 
-                dentro de este tag 
-                            respeta todo lo que agamos 
-                    dentro el tag</pre></li>
                 </ul>
                 <ul>
                     <h3>tags de formato a nivel semantico</h3>
@@ -112,14 +115,46 @@
                 </ul>
                 <ul>
                     <h3>saltos de linea</h3>
-                    <li>br - esta es un <br> salto de linea</li>
-                    <li>hr - esta tag <hr> separa contenido es <strong>semantica</strong> para html</li>
+                    <li>
+                        br - esta es un <br> salto de linea
+                    </li>
+                    <li>
+                        hr - esta tag <hr> separa contenido es <strong>semantica</strong> para html
+                    </li>
+                </ul>
+                <ul>
+                    <h3>mas formatos</h3>
+                    <li>
+                        pre - <pre>todo lo que este 
+                        dentro de este tag 
+                                    respeta todo lo que agamos 
+                            dentro el tag</pre>
+                    </li>
+                    <li>
+                        code - <code>texto en formato de codigo let estatus = repasando </code>
+                    </li>
                 </ul>
             </article>
         </section>
-
+        <br>
         <section>
-
+            <h2>Estructura semantica</h2>
+            etiquetas contenedoras semanticas segun su contenido
+            <br>
+            <article>
+                <header>header - encabezado</header>
+                <nav>nav - barra de navegacion / menu</nav>
+                <main>main - contenido principal
+                    <section>section - contenido generico</section>
+                    <article>article - contenido que por si solo se explica (seccion de auto-contenido)</article>
+                    <aside>aside - contenido secundario</aside>
+                </main>
+                <footer>footer - pie de pagina</footer>
+                <figure>
+                    <img src="https://www.lawebdelprogramador.com/usr/220000/220024/59a26b1d7420d-Estructura-Semantica-HTML5.jpg" alt="imagen de estructura semantica html5">
+                    <figcaption>imagen de reprecentacion, puede cambiar segun el diseño de una pagina</figcaption>
+                </figure>
+            </article>
         </section>
     </main>
 </body>
