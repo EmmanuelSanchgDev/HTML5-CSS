@@ -1,65 +1,169 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fundamentos CSS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>css</title>
 </head>
 <body>
-    <h1>Re-aprendiendo CSS</h1>
-    <ul>
-        <li>CSS - Cascading Style Sheet</li>
-        <details>
-            <summary>uso</summary>
-            <p>define la precentacion del documento html</p>
-        </details>
-    </ul>
-    <hr>
-    <!----------------->
-    <ul>
-        <li>Sintaxis
-            <ol>
-                <li>selector</li>
-                <li>bloque de codigo {}</li>
-                <li>propiedad y valor de propiedad</li>
-                <li>separacion de propiedad y valor por ':'</li>
-            </ol>
-        </li>
-        <br>
-        <li>esto es una regla se CSS</li>
-        <pre>
-    selector {
+    <h1 class="title">temario de Fundamentos de CSS</h1>
+    <ol class="list-primary">
+        <li>
+            <h2>regla de css y sintaxis</h2>
+            <ul>
+                <li>
+                    <pre>
+selector {
     propiedad: valor;
+}
+                    </pre>
+                </li>
+            </ul>
+        </li>
+        <li><h2>aplicando css a html</h2>
+            <ul>
+                <li>estilos en linea
+                    <pre>
+    &lt;p style=&quot;color: green;&quot;&gt;hola soy un parrafo verde&lt;/p&gt;
+                    </pre>
+                </li>
+                <li>estilos internos
+                    <pre>
+    &lt;head&gt;
+        &lt;style&gt;
+            p {
+                color: green;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;soy un parrafo verde&lt;/p&gt;
+    &lt;/body&gt;
+                    </pre>
+                </li>
+                <li>estilos externos
+                    <pre>
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;soy un parrafo verde&lt;/p&gt;
+    &lt;/body&gt;
+                    </pre>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h2>selectores</h2>
+            <ul>
+                <li>elemento html
+                    <pre>
+    p {
+        font-size: 30px;
     }
-        </pre>
-    </ul>
-    <!----------------->
-    <p>**los comentareos se agregan dentro de &lt;!--esto es un comentareo de una <br>o mas de una linea--&gt;</p>
-    <!----------------->
-    <h2>aplicando estilos</h2>
-    <ol>
-        <li>estilos en linea</li>
-        <pre>
-    &lt;p style=&quot;color: orange;&quot;&gt;hola mundo&lt;/p&gt;
-        </pre>
+                    </pre>
+                </li>
+                <li>class
+                    <pre>
+    .parrafo {
+        color: lightcoral;
+    }
+                    </pre>
+                </li>
+                <li>id
+                    <pre>
+    #parrafo-id {
+        background-color: gray;
+    }
+                    </pre>
+                </li>
+                <br>
+                <li>hijo decendiente
+                    <pre>
+    .contenedor p {
+        font-family: 'Arial';
+    }
+                    </pre>
+                </li>
+                <li>hijo directo <span class="size-color">></span>
+                    <pre>
+    .contenedor > p {
+        font-size: 45px;
+    }
+                    </pre>
+                </li>
+                <li>hermano general <span class="size-color">~</span>
+                    <pre>
+    p ~ figure {
+        width: 100%;
+    }
+                    </pre>
+                </li>
+                <li>hermano adjacente <span class="size-color">+</span>
+                    <pre>
+    img + figcaption {
+        font-weight: bold;
+    }
+                    </pre>
+                </li>
+                <br>
+                <li>
+                    <h2>selector de atributos <span class="size-color">[atributo="valor"]</span></h2>
+                    <ul>
+                        <li>
+                            podemos seleccionar un elemencto especificando su atributo en caso de que tengamos varios y solo necesitemos uno en especifico
+                            <pre>
+        a[href="nosotros"]{
 
-        <li>estilos internos</li>
-        <p>hacemos uso de la tag &lt;style&gt;Regla CSS&lt;/style&gt; dentro del head</p>
+        }
+                            </pre>
+                        </li>
+                        <li>
+                            el <span class="size-color">*</span> selecciona al elemento que no imporat donde pero si contiene una palabra en especifico, sera seleccionado
+                            <pre>
+        a[href*="inicio"]{
 
-        <li>estilos externos</li>
-        <p>una archivo .css que se agrega con la tag &lt;link&gt; en el &lt;head&gt;</p>
+        }
+                            </pre>
+                        </li>
+                        <li>
+                            el <span class="size-color">^</span> selecciona el elemento que en su atributo especificado comience con el texto definido
+                            <pre>
+        a[href^="http"]{
 
-        <li>importando hojas de estilo dentro de otras hojas</li>
-        <pre>
-    @import url(ruta/otra/hoja)
-        </pre>
-        <p>PERO ESTO(#4) ES UNA MALA PRACTICA</p>
+        }
+                            </pre>
+                        </li>
+                        <li>
+                            el <span class="size-color">$</span> selecciona el elemento que en su atributo especificado termine con el texto definido
+                            <pre>
+        a[href$=".com"]{
+
+        }
+                            </pre>
+                        </li>
+                        <li>
+                            <span class="size-color">~</span> no se en que se diferencia
+                            <pre>
+        a[class~=""]{
+
+        }
+                            </pre>
+                        </li>
+                        <li>
+                            el <span class="size-color">|</span> se aplicara estilos si la palabra que buscamos tiene segido de ella un -
+                            <pre>
+        a[class|="menu"]{
+
+        }
+                            </pre>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
     </ol>
-
-    <hr>
-    <h2 style="font-weight: bold;">me quede en <span style="color: green;">Selectores</span> - 47:45 -</h2>
-    
-
 </body>
 </html>
