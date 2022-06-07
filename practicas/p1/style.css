@@ -94,6 +94,14 @@ a:hover  {
         display: block;
     }
 
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+    }
+
     .header-mobile {
         width: 100vw;
         height: 5rem;
@@ -102,15 +110,18 @@ a:hover  {
         align-items: center;
     }
 
+    .button-mobile {
+        padding: 0 15px;
+        background-color: #000;
+        color: #fff;
+    }
+
     .list-links {
         background-color: #000;
     }
 
     /*cambiar a futuro con JS*/
-    .list-links {
+    .colapsar {
         display: none;
-    }
-    .mobile:hover .list-links {
-        display: block;
     }
 }
