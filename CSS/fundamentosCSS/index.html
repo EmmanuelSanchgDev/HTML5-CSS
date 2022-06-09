@@ -312,6 +312,76 @@ selector {
             </li>
         </ol>
       </li>
+      <li>
+        <h2>agrupando selectores</h2>
+        <ol>
+          <li>agrupar se lectores es aplicar los mismo estilos a mas de un selector EJ:</li>
+          <pre>
+  a[href*=home],
+  .title {
+    font-weight: bold;
+  }
+          </pre>
+        </ol>
+      </li>
+      <li>
+        <h2>La Cascaca</h2>
+        <p>
+          css define los estilos confome van apareciendo en el ducumento, comenzando desde el html, 
+          pasando por los link(si es que los hay), luego la tagstyle en head(si es que la hay), hasta llegar a los estylos inline(si es que los hay), si por algun motivo existe algun complicto en los estilos(un mismo selector tiene mas de un estilo de finido que se contradicen entre ellos) solo aplicando el ultimo de ellos.
+        </p>
+        <ul>
+          <li>
+            <pre>
+  p {
+    border: 1px silid green;
+    color: red;
+    font-weight: bold;
+    text-decoration: undelline;
+  }
+  
+  p {
+    border: 1px silid purple;
+    color: lightcoral;
+    font-weight: normal;
+  } /*este ultimo es el que se aplicaria, el text-decoretion no se modifica por que no hay nungun conflicto(se conserva)*/
+            </pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2>Especificidad</h2>
+        <p>
+          css aplica los estilos por cascada, pero si por alguna rason existe algun estilo con un peso mayos al ultimo que se declaro este se mantendra, asi funciona la especificidad
+        </p>
+        <table>
+          <caption>Nivel de peso</caption>
+          <tr>
+            <th>selector</th>
+            <th>peso</th>
+          </tr>
+          <tr>
+            <td>Etiquetas(p) y PseudolEmentos(:)</td>
+            <td>0,0,0,1</td>
+          </tr>
+          <tr>
+            <td>Clases(.), Atributos([href*=""]) y PseudoClasses</td>
+            <td>0,0,1,0</td>
+          </tr>
+          <tr>
+            <td>Id's(#)</td>
+            <td>0,1,0,0</td>
+          </tr>
+          <tr>
+            <td>estilos inline(&lt;p style=&quot;propiedad: valor;&quot;&gt;)</td>
+            <td>1,0,0,0</td>
+          </tr>
+          <tr>
+            <td>!important</td>
+            <td>Rompe la Especificidad/Cascada</td>
+          </tr>
+        </table>
+      </li>
     </ol>
   </body>
 </html>
