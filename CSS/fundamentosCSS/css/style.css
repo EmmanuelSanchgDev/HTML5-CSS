@@ -7,3 +7,29 @@
     font-size: 25px;
     font-weight: bold;
 }
+
+.resaltado {
+    font-weight: bold;
+}
+
+.active a {
+    text-decoration: none;
+}
+.active a:active {
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.active button:active {
+    transform: translateY(-5px);
+}
+
+.checked :checked {
+    box-shadow: 0 0 0 2px purple;
+    color: rgb(41, 90, 206);
+}
+
+.default input:default + label {
+    color: blue;
+}
