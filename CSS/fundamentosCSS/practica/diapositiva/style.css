@@ -247,6 +247,11 @@ label textarea {
 }
 
 @media screen and (max-width: 590px) {
+    .header {
+        justify-content: center;
+        height: 5rem;
+        padding: initial;
+    }
     .header .nav {
         display: none;
     }
