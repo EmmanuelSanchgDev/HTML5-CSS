@@ -5,6 +5,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem;
@@ -22,6 +23,9 @@ body {
 
     position: sticky;
     top: 0;
+}
+.header .title {
+    color: #000;
 }
 .list {
     display: flex;
@@ -71,6 +75,10 @@ li a:hover {
 .seccion .title {
     text-transform: uppercase;
     font-size: 3rem;
+    position: sticky;
+    top: 5%;
+    color: #000;
+    text-shadow: 0.1rem 0.1rem #fff;
 }
 .conteiner {
     height: 90%;
@@ -86,6 +94,91 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*modal*/
+.contactar {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 2rem;
+    border: 0.1rem solid #fff;
+    border-radius: 1.5rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.contactar:hover {
+    background-color: #fff;
+    color: #000;
+}
+.conteiner-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.form {
+    width: 50%;
+    height: 50%;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+label {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label input,
+label textarea {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+label input {
+    height: 5rem;
+    padding-left: 2rem;
+}
+label textarea {
+    padding: 1rem 2rem;
+    resize: none;
+}
+.buttom-close {
+    background-color: #000;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.conteiner-form:target {
+    display: flex;
 }
 
 /*background*/
