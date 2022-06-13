@@ -1,0 +1,21 @@
+.conteiner {
+    height: 200px;
+    display: flex;
+
+    background-color: lightcoral;
+}
+.items {
+    width: 200px;
+    height: 100%;
+
+    position: relative;
+
+    border: 1px solid gray;
+    background-color: lightblue;
+}
+
+.items:hover {
+    z-index: 10;
+
+    box-shadow: 0 0 15px gray;
+}
