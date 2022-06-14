@@ -15,6 +15,9 @@
                 <li class="nav__items">
                     <a class="nav__links" href="#colores">Colores</a>
                 </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="#medidas">Unidades de medida</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -22,10 +25,89 @@
         <section id="colores">
             <h2>Colores</h2>
             <ul>
-                <li>Color Name</li>
-                <li>RGB() (rgba)</li>
-                <li>Hexadecimal</li>
-                <li>hsl (hsla)</li>
+                <li>Color Name
+                    <pre>
+    color: red;
+    background-color: lightblue;
+    --existe mas de 140 colores
+                    </pre>
+                </li>
+                <li>RGB() / (rgba)
+                    <pre>
+    color: rgb(255, 0, 0);
+    background-color: rgb(173, 216, 230);
+    --rgb(rojo,verde,azul)
+
+    color: rgba(255, 0, 0, 0.5); /*rojo con transparencia*/
+    background-color: rgba(173, 216, 230, 0.8);
+    --la transparencia va de 0 a 1
+                    </pre>
+                </li>
+                <li>Hexadecimal
+                    <pre>
+        color: #ff0000;
+        background-color: #add8e6;
+        --existe mas de 140 colores
+
+        color: #ff000005;
+        background-color: #add8e67a;
+        -- tambien cuantacon el canal alfa
+                    </pre>
+                </li>
+                <li>hsl (hsla)
+                    <pre>
+    color: hsl(0, 100%, 50%);
+    background-color: hsl(195, 53%, 79%);
+    --hsl(tono, saturacion, luminosidad)
+
+    color: hsla(0, 100%, 50%, 0.5);
+    --canal alfa hsla
+                    </pre>
+                </li>
+            </ul>
+            <p>Nota: cualquiera de ellos se puede utilizar y dependera del acuerdo del equipo de trabajo</p>
+            <br>
+            <ul>
+                <li>transparent & currentColor
+                    <ul>
+                        <li>transparente</li>
+                        <p>es el valor por defecto de los colores</p>
+                        <br>
+                        <li>currentColor</li>
+                        <p>hereda el color de contenedor o del ancestro mas cercano</p>
+                    </ul>
+                </li>
+                <li>Opacity
+                    <p>modifica la transparencia del como se muestra un elemento, seaplica al color y el contenido</p>
+                </li>
+            </ul>
+            <a class="link" href="#home">🚀</a>
+        </section>
+        <hr>
+        <section id="medidas">
+            <h2>Unidades de medida</h2>
+            <ul>
+                <li>medidas Absolutas (su valor no cambia)
+                    <ul>
+                        <li>pc,cm.mm,in,Q</li>
+                        <p>medidas del mundo real</p>
+                        <li>pt (1/72in)</li>
+                        <li>px (1/96in)</li>
+                    </ul>
+                </li>
+                <li>medidas Relativas (su valor es relaito a un contexto (como tamañ de fuente))
+                    <ul>
+                        <li>em</li>
+                        <li>rem</li>
+                        <li>ex</li>
+                        <li>ch</li>
+                        <li>%</li>
+                        <li>vw</li>
+                        <li>vh</li>
+                        <li>vmax</li>
+                        <li>vmin</li>
+                    </ul>
+                </li>
             </ul>
             <a class="link" href="#home">🚀</a>
         </section>
