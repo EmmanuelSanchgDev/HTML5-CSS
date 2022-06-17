@@ -21,6 +21,18 @@
                 <li class="nav__items">
                     <a class="nav__links" href="#variables">Custom Properties (Variables)</a>
                 </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="#funciones">Funciones</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="#estilos-de-fuente">Estilos de Textos</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="#add-fuentes">Agregando Fuentes Externas</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="#texto">Estilos de Texto</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -113,9 +125,112 @@
                 </li>
             </ul>
             <a class="link" href="#home">🚀</a>
+            <hr>
         </section>
-        <section class="variables">
+        <section id="variables">
             <h2>Custome Propertis (Variables CSS)</h2>
+            <ul>
+                <li>
+                    es una variable que almacena valores que se usaran en diferentes propiedades, una variable se declara comensando con --, y se utiliza dentro de var(--variable)
+                    <pre>
+<code>
+    ::root {
+        --bg-section: #fff;
+    }
+    section {
+        background-color: var(--bg-section);
+    }
+</code>
+                    </pre>
+                </li>
+            </ul>
+            <a class="link" href="#home">🚀</a>
+            <hr>
+        </section>
+        <section id="funciones">
+            <h2>Funciones CSS</h2>
+            <ul>
+                <li>
+                    var() -- sirve para utilizar nuestras custom propertis
+                </li>
+                <li>
+                    url() -- sirve para agregar ruta a recursos
+                </li>
+                <li>
+                    calc() -- sirve para hacer calculos arigmeticos (es importante separar con espacios los operandos del operador)
+                    <code>
+                        width: calc(var(--width-box) + (var(--padding-size) * 2));
+                    </code>
+                </li>
+                <li>
+                    min() & max()
+                    <code>
+                        width: min(300px, 20vw); //toma el valor mas chico de la "lista"
+                        height: max(200px, 25vh); //toma el valor mas grande de la "lista"
+                    </code>
+                </li>
+                <li>
+                    clamp() --esta funcion recibe 3 valores (Tamaño min, Tamaño ideal, Tamaño maximo)
+                    <code>
+                        font-size: clamp(2rem, 1rem + 3vw, 3rem);
+                        // es muy buena obssion parael responsive design
+                    </code>
+                </li>
+            </ul>
+            <a class="link" href="#home">🚀</a>
+            <hr>
+        </section>
+        <section id="estilos-de-fuente">
+            <h2>Estilos de Fuentes de Texto</h2>
+            <ul>
+                <li>font-family -- indica la familia de fuente</li>
+                <li>font-size -- indica el tamaño de la fuente</li>
+                <li>font-weight -- indica el peso/grosor de la fuente</li>
+                <li>font-style -- indica el tipo de escritura de la fuente</li>
+                <li>font-variant -- posemos capitalizar la fuente</li>
+                <li>line-heght -- es la altura &oacute; separacion entre lineas</li>
+            </ul>
+            <a class="link" href="#home">🚀</a>
+            <hr>
+        </section>
+        <section id="add-fuentes">
+            <h2>Agregar Fuentes Externos</h2>
+            <ul>
+                <li>formato .woff &oacute; .woff2 -- (Web Open Font format)
+                    <pre>
+    add
+    <code>
+    @font-face {
+        font-family : "nombreFuente";
+        src: url("/ruta/de/fuente") format("woff");
+        font-display: swap; (hay varias pero es mejor swap)
+    }
+
+    .main {
+        font-family: "nombreFunte", fuenteDefault(Siempre);
+    }
+</code>
+                    </pre>
+                </li>
+                <li>Google fonts</li>
+            </ul>
+            <a class="link" href="#home">🚀</a>
+            <hr>
+        </section>
+        <section id="texto">
+            <h2>estilos de texto</h2>
+            <ul>
+                <li>text-aling -- nos permite alinear el texto (left | center | right)</li>
+                <li>text-decoration -- podemos agregar siertas caracteristicas a los textos (lineas abajo, arriba, etc)</li>
+                <li>text-indent -- nos permite dar sangrita al texto</li>
+                <li>text-overflow -- si el texto se sale del contenedor podemos hacer que se apliquen unos puntos suspensivos (...)</li>
+                <li>white-space -- es el que permite que se agan los saltos de linea cuando el texto no cabe en la pantalla, su valor por default es "wrap"</li>
+                <li>text-transform -- nos permite transformar los textos de muchas formas</li>
+                <li>letter-spacing -- manipula el espacio entre letras</li>
+                <li>word-spacing -- manipula el espacio entre palabras</li>
+            </ul>
+            <a class="link" href="#home">🚀</a>
+            <hr>
         </section>
     </main>
 </body>

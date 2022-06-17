@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.calc p {
+    --padding-size: 3ch;
+    --width-box: 10ch;
+
+    width: calc(var(--width-box) + (var(--padding-size) * 2));
+    background-color: lightblue;
+    padding-left: var(--padding-size);
+    padding-right: var(--padding-size);
+
+}
