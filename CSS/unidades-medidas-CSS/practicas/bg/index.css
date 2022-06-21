@@ -1,0 +1,65 @@
+.box {
+    margin: 2rem auto;
+    width: 300px;
+    height: 300px;
+    border: thick dashed red;
+}
+.bg-color {
+    background-color: lightblue;
+}
+.bg-image {
+    background-image: url("/practicas/bg/image.jpg");
+}
+.bg-size {
+    background-image: url("/practicas/bg/image.jpg");
+    background-size: 300px;
+    background-size: cover;
+    background-size: contain;
+}
+.bg-repeat {
+    background-image: url("/practicas/bg/image.jpg");
+    background-size: 100px;
+    background-repeat: repeat;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+}
+.bg-position {
+    background-color: lightcoral;
+    background-image: url("/practicas/bg/image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 10px 50px;
+    background-position: 50%;
+    background-position: top center;
+    background-position: bottom right;
+    background-position: center;
+}
+.bg-clip {
+    background-color: navy;
+    background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-clip: border-box;
+    background-clip: padding-box;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 3rem;
+}
+.bg-origin {
+    background-color: navy;
+    background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-origin: border-box;
+    background-origin: content-box;
+    padding: 3rem;
+}
+.bg-attachment {
+    width: 100%;
+    background-image: url(./image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-attachment: fixed;
+}

@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .caja {
-            
-
-        }
         .caja p {
             padding: 1ch;
             width: 100px;
             background-color: lightblue;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .caja2 {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -23,8 +28,9 @@
 <body>
     <div class="caja">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto quos molestias assumenda tempore nisi incidunt in natus dolorum pariatur ex aut quis dicta, corrupti ad optio sint ullam autem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto quos molestias assumenda tempore nisi incidunt in natus dolorum pariatur ex aut quis dicta, corrupti ad optio sint ullam autem. lore
         </p>
     </div>
+    <p class="caja2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, omnis aliquid voluptatibus asperiores corporis illo ex sed quos neque et vero quisquam natus accusamus sapiente, vel, animi error nam ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione voluptas, deserunt consequuntur ex doloribus excepturi tenetur soluta accusamus nobis, cupiditate sequi sed officiis porro unde. Laudantium totam suscipit quos magnam.</p>
 </body>
 </html>
