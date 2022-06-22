@@ -39,6 +39,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     box-shadow: 0 0px 10px;
+    cursor: pointer;
 }
 ::placeholder {
     color: #000;
