@@ -45,3 +45,10 @@ input[type="submit"]:hover {
     color: #000;
     font-weight: bold;
 }
+
+input:invalid {
+    border-bottom: 3px red solid;
+}
+input:invalid {
+    border-color: #fff;
+}
