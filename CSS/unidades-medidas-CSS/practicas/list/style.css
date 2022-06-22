@@ -1,0 +1,15 @@
+.list li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.list::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
