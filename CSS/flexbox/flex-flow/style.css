@@ -15,6 +15,10 @@
     background-color: lightcoral;
 }
 
+/*
+    flex-direction: row | row-reverse
+*/
+
 .contenedor-flex {
     display: inline-flex;
     display: flex;
@@ -22,8 +26,8 @@
     flex-direction: column;
     flex-direction: row; /*default*/
     flex-direction: row-reverse;
-    flex-direction: column-reverse;
     flex-direction: column;
+    flex-direction: column-reverse;
     
     flex-wrap: wrap; /*default*/
     
