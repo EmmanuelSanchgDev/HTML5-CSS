@@ -19,15 +19,17 @@
     display: inline-flex;
     display: flex;
     flex-direction: row; /*default*/
-    flex-direction: row-reverse;
     flex-direction: column;
-    flex-direction: column-reverse;
     flex-direction: row; /*default*/
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    flex-direction: column;
     
     flex-wrap: wrap; /*default*/
     
 }
 .item-flex-2 {
     width: 20%;
+    height: 20%;
     border: 1px solid;
 }
