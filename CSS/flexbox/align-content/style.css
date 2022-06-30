@@ -6,7 +6,7 @@
     background-color: lightblue;
 }
 .items {
-    width: 500px;
+    width: 100px;
     height: 100;
     background-color: lightcoral;
     border-radius: 10px;
@@ -19,6 +19,11 @@
     flex-flow: row wrap;
     /* justify-content: space-around; */
     /* align-items: flex-end; */
-    align-content: flex-end;
-    align-content: space-between;
+    /* align-content: flex-end; */
+    /* align-items: stretch; */
+    /* justify-content: stretch; */
+    /* align-items: stretch; */
+    /* justify-content: stretch; */
+    /* align-items: flex-start; */
+    align-content: flex-start;
 }
