@@ -45,7 +45,7 @@ body {
 
 .header__main {
     flex-grow: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(193, 48, 48, 0.5)), url(https://placeimg.com/640/480/any);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(193, 48, 48, 0.5)), url(https://placeimg.com/1920/1080/any);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -84,8 +84,8 @@ body {
 
 .main__image {
     max-width: 100%;
+    width: 100%;
     object-fit: cover;
-    object-position: -50% 50%;
 }
 
 .main__conteiner-text {
